@@ -1,0 +1,52 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<title>Assignment-2</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" th:href="@{/styleSheet/style.css}"/>    
+
+</head>
+<body>
+  <form class="form-horizontal" action="issuewarning" method="POST">
+ 
+    <fieldset>
+
+    <!-- Form Name -->
+      <legend>ISSUE WARNING</legend>
+      <br>
+      <!-- Select Basic -->
+      <!-- <div class="form-group">
+        <label class="col-md-4 control-label" for="selectbasic">Choose Employee</label>
+        <div class="col-md-5">
+          <select name="employee" class="form-control">
+           
+            <option value=""></option>
+           
+           
+          </select>
+        </div>
+      </div> -->
+      <br>
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textarea">Warning Text</label>
+        <div class="col-md-12">                     
+          <textarea rows="5" class="form-control" placeholder="Write Warning Here" name="textarea"></textarea>
+        </div>
+      </div>
+
+      <br>
+      <!-- Button (Double) -->
+      <div class="form-group">
+        
+        <div class="col-md-8">
+          <button class="btn btn-success" type="submit">Issue Warning</button>
+         <a th:href="@{/ceo}" class="btn btn-danger">Back</a>
+        </div>
+      </div>
+
+    </fieldset>
+  </form>
+
+
+</body>
+</html>

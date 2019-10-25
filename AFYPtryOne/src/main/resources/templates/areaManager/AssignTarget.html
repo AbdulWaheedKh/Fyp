@@ -1,0 +1,117 @@
+<html xmlns:th="https://thymeleaf.org">
+<head>
+<title>Regus Pharma</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" th:href="@{/styleSheet/style.css}"/>    
+
+</head>
+<body>
+
+<h1>Assign Target  form to assign targets</h1>
+
+
+<!-- <form class="form-inline" action="#" th:action="@{AssignTarget}" th:object="${user}" method="post">
+    <label for="name">Name</label>
+    <input type="text" class="form-control"  id="name" placeholder="Name" required>
+     <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span> 
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" placeholder="Email" required>
+    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span> 
+    <input type="submit" class="btn btn-primary" value="Add User">   
+</form>
+
+ -->
+
+
+
+ 
+<!-- <div class="container">
+<form class="form-inline" action="#" th:action="@{/AssignTarget}" th:object="${user}" method="post">
+    <label for="name">Name</label>
+    <input type="text" class="form-control"  th:field="*{name}" id="name" placeholder="Name">
+    <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
+    <label for="email">Email</label>
+    <input type="text" class="form-control"  th:field="*{email}" id="email" placeholder="Email">
+    <span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+    <input type="submit" class="btn btn-primary" value="Add User">   
+</form>
+
+ 
+
+ -->
+
+
+
+<!-- 
+<div class="container">
+			<h1><center>Assign Sales Target</center></h1>
+		 <form action="save" method="POST">
+		 <div class="row">
+  
+  <div class="col-sm-4">
+  <div class="form-group">
+					      <label for="assignedTo"> Assigned to </label>					
+					      <input type="text" class="form-control" id="assignedTo" placeholder="assignedTo" name="assignedTo">
+					    </div>
+						
+  
+  </div>
+  
+  <div class="col-sm-4">
+  <div class="form-group">
+					      <label for="selectMonth"> Select Month</label>
+					      <input type="number" class="form-control" id="selectMonth" placeholder="selectMonth" name="selectMonth">
+					    </div>
+					    
+  
+  </div>
+  
+  <div class="col-sm-4">
+  <div class="form-group">
+					      <label for="selectYear"> Select Year</label>
+					      <input type="number" class="form-control" id="selectYear" placeholder="selectYear" name="selectYear">
+					    </div>
+	
+  
+  </div>
+ 
+  
+</div>
+
+
+<div class="form-group">
+	<label for="assignedTarget"> Select Year</label>
+	<input type="number" class="form-control" id="assignedTarget" placeholder="assignedTarget" name="assignedTarget">
+ </div>
+	
+
+<button type="submit" class="btn btn-primary">Assign Sales Target</button> 
+<a th:href="@{/ceo}" class="btn btn-danger">Back</a>
+
+
+</form>
+
+</div>
+ -->
+ <!-- 
+		<div class="container">
+		  <h2>Stacked form</h2>
+				  <form action="save" method="POST">
+					    <div class="form-group">
+					      <label for="Username"> Enter Username</label>					
+					      <input type="text" class="form-control" id="username" placeholder="username" name="username">
+					    </div>
+						<div class="form-group">
+					      <label for="Password"> Enter Password</label>
+					      <input type="password" class="form-control" id="password" placeholder="Enter password" name="password">
+					    </div>
+					    <div class="form-group form-check">
+					      <label class="form-check-label">
+					        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+					      </label>
+					    </div>
+					    <button type="submit" class="btn btn-primary">Submit</button>
+				  </form>
+		</div> -->
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="https://thymeleaf.org">  
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" th:href="@{/styleSheet/style.css}"/>    
+    <meta charset="UTF-8" />
+    <title>Regus Pharma</title>
+</head>
+<body>
+
+this is view sales
+
+
+
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-4">
+  				 <a th:href="@{RegionalSale}"> <img class="rounded-circle img-fluid d-block mx-auto" style="width: 200px;height: 200px;" th:src="@{/ceoImg/sale.png}"  alt="">
+		          <h3>
+		          <small>Regional Sales</small></a>
+		          </h3>
+  
+  </div>
+  <div class="col-sm-4">
+  
+				  <a     th:href="@{AreaSale}"> <img class="rounded-circle img-fluid d-block mx-auto" style="width: 200px;height: 200px;" th:src="@{/ceoImg/sale.png}"  alt="">
+		          <h3>
+		           <small>Area Sales </small>
+		           </a>
+		          </h3>
+  </div>
+  
+  <div class="col-sm-2"></div>
+</div>
+
+
+
+
+
+
+</body></html>
